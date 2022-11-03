@@ -27,7 +27,7 @@ def get_camping_API(url, service_key):
     # print(df)
     df = pd.DataFrame(df)
     # # print(df)
-    df.to_csv('camping_db.csv', encoding='utf-8-sig')
+    df.to_csv('D:/python_basic/camping/camping_db.csv', encoding='utf-8-sig')
 
     return df
 
@@ -65,7 +65,7 @@ def make_map(db):
 
 if __name__ == '__main__':
     
-    camp_df = pd.read_csv('camping_db.csv', encoding='cp949')
+    camp_df = pd.read_csv('D:/python_basic/camping/camping_db.csv', encoding='cp949')
 
     print(camp_df.columns)
 
